@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 {
     int *id_sequenz;
     
-    // Speicherplatz für ein Array mit 3 IDs reservieren*/
+    //Speicherplatz für ein Array mit 3 IDs reservieren
     id_sequenz = (int*) malloc(3);
     if (id_sequenz == NULL) exit(1);
 
