@@ -11,11 +11,11 @@ int main(int argc, char const *argv[])
     if (id_sequenz == NULL) exit(1);
 
     /* Das Array mit den IDs befüllen lassen*/
-    unsigned int id;
+    int id;
     for(int y=0; y<3; y++)
     {
-        printf("\nGeben Sie die %d. ID ein: ",y+1);
-        scanf("%d", id);
+        printf("\nGeben Sie die %d. vierstellige ID ein: ",y+1);
+        scanf("%4d", &id);
         id_sequenz[y]=id;
     }
 }
