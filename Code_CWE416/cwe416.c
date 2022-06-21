@@ -3,16 +3,14 @@
 #include<string.h>
 #include <stdbool.h>
 
-int main(int argc, char const *argv[])
-{
+int main(){
     int abrt = 2;
     int groesse = 10;
     bool err = true;
     char* ptr = (char*)malloc (groesse*sizeof(int));
     //... mache etwas mit dem Pointer
     //... rufe evtl einen Fehler hervor -> err=true;
-    if (err) 
-    {
+    if (err) {
         abrt = 1;
         free(ptr);
     }

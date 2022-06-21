@@ -3,8 +3,7 @@
 #include<string.h>
 #include<ctype.h>
 
-char* veraendere_string(char* string)
-{
+char* veraendere_string(char* string){
     int a;
     char buf[24];
     strcpy(buf, string);
@@ -16,8 +15,7 @@ char* veraendere_string(char* string)
     return string;
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
     char satz[100];
     printf("Geben Sie einen beliebigen Satz ein, welcher veraendert werden soll: ");
     scanf("%s",satz);
@@ -25,8 +23,7 @@ int main(int argc, char const *argv[])
 }
 
     
- char* veraendere_string_verbessert(char* string)
- {
+ char* veraendere_string_verbessert(char* string){
     const size_t LAEN = 100;
     int a;
     char buf[LAEN];
@@ -39,4 +36,3 @@ int main(int argc, char const *argv[])
     }
     return string;
  }   
-
